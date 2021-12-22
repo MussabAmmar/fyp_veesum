@@ -20,4 +20,4 @@ app.get( '/', ( req, res ) => {
 //we are connecting to a custom namespace called */stream*
 io.of( '/stream' ).on( 'connection', stream );
 
-server.listen( 3000 );
+server.listen( process.env.PORT || 3000 );
