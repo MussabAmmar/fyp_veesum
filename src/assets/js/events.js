@@ -55,11 +55,8 @@ window.addEventListener( 'load', () => {
 
         let roomName = document.querySelector( '#room-name' ).value;
         let yourName = document.querySelector( '#your-name' ).value;
-        let agenda1 = document.querySelector( '#agenda1' ).value;
-        let agenda2 = document.querySelector( '#agenda2' ).value;
-        let agenda3 = document.querySelector( '#agenda3' ).value;
 
-        if ( roomName && yourName && agenda1 && agenda2 && agenda3) {
+        if ( roomName && yourName ) {
             //remove error message, if any
             document.querySelector('#err-msg').innerText = "";
 
@@ -74,8 +71,8 @@ window.addEventListener( 'load', () => {
                 Share the room link with your partners.`;
 
             //empty the values
-            //document.querySelector( '#room-name' ).value = '';
-            //document.querySelector( '#your-name' ).value = '';
+            document.querySelector( '#room-name' ).value = '';
+            document.querySelector( '#your-name' ).value = '';
         }
 
         else {
